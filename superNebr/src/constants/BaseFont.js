@@ -1,10 +1,9 @@
 /* eslint-disable prettier/prettier */
 export default {
-  fontBlack: 'Poppins-Black',
-  fontBold: 'Poppins-Bold',
-  fontExtraBold: 'Poppins-ExtraBold',
-  fontMedium: 'Poppins-Medium',
-  fontSemi: 'Poppins-SemiBold',
-  fontLight: 'Poppins-Light',
-  fontRegular: 'Poppins-Regular',
+  fontBold: 'SFProText-Bold',
+  fontExtraBold: 'SFProText-Heavy',
+  fontMedium: 'SFProText-Medium',
+  fontSemi: 'SFProText-SemiBold',
+  fontLight: 'SFProText-Light',
+  fontRegular: 'SFProText-Regular',
 };

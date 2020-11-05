@@ -7,6 +7,7 @@ import HelperStyle from '../../styles/HelperStyle';
 import BaseColors from '../../constants/BaseColors';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import Icon1 from 'react-native-vector-icons/dist/Entypo';
+import BaseFont from '../../constants/BaseFont';
 
 const LoginScreen = ({ navigation }) => {
   return (
@@ -17,7 +18,7 @@ const LoginScreen = ({ navigation }) => {
                 style={{width: 170, height: 34 }}
             />
         </View>
-        <Text style={[HelperStyle.marginHorizontal20, HelperStyle.marginVertical40, {fontSize: 34, textAlign: 'left', color : BaseColors.heading, fontFamily: 'System', fontWeight: 'bold'}]}>
+        <Text style={[HelperStyle.marginHorizontal20, HelperStyle.marginVertical40, {fontSize: 34, textAlign: 'left', color : BaseColors.heading, fontFamily: BaseFont.fontBold}]}>
             Sign In
         </Text>
         <View style={[HelperStyle.flexColumn, {marginVertical: 50}, HelperStyle.marginBottom20]}>
@@ -35,19 +36,19 @@ const LoginScreen = ({ navigation }) => {
               placeholder="Password"
               value="Password"
             />
-            <Text style={[HelperStyle.marginHorizontal40, HelperStyle.marginVertical10, {fontSize: 13, textAlign: 'right', color : BaseColors.heading, fontFamily: 'System'}]}>
+            <Text style={[HelperStyle.marginHorizontal40, HelperStyle.marginVertical10, {fontSize: 13, textAlign: 'right', color : BaseColors.heading, fontFamily: BaseFont.fontMedium}]}>
                 Forgot Password?
             </Text>
         </View>
         <View style={[HelperStyle.flexRow, HelperStyle.marginVertical20, {backgroundColor : BaseColors.mustard, width: '75%', borderTopRightRadius: 30, borderBottomRightRadius: 30}, HelperStyle.paddingVertical15, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onStartShouldSetResponder={() => navigation.navigate('SignUp')}>
-            <Text style={[{fontSize: 17, color : 'white', fontFamily: 'System'}]}>
+            <Text style={[{fontSize: 17, color : 'white', fontFamily: BaseFont.fontMedium}]}>
                 Sign In
             </Text>
             <Icon name="arrow-right" size={20} color="white" />
         </View>
         <View style={[HelperStyle.flexColumn, HelperStyle.marginVertical30, HelperStyle.marginHorizontal20, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]}>
             <View style={[HelperStyle.flexRow, HelperStyle.flexRowCenter, HelperStyle.flexAlignCenter]}>
-                <Text style={[{fontSize: 15, color : '#B1B2B8', fontFamily: 'System'}]}>
+                <Text style={[{fontSize: 15, color : '#B1B2B8', fontFamily: BaseFont.fontMedium}]}>
                     --------- or connect with ---------
                 </Text>
             </View>
@@ -57,8 +58,8 @@ const LoginScreen = ({ navigation }) => {
             </View>
         </View>
         <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]}>
-            <Text style={[{fontSize: 13, color : '#243177', fontFamily: 'System'}]}>
-                Don't have an account? <Text style={{fontWeight: 'bold'}}>Sign Up</Text>
+            <Text style={[{fontSize: 13, color : '#243177', fontFamily: BaseFont.fontMedium}]}>
+                Don't have an account? <Text style={{fontFamily: BaseFont.fontBold}}>Sign Up</Text>
             </Text>
         </View>
     </View>
@@ -69,12 +70,12 @@ export default LoginScreen;
 
 const styles = StyleSheet.create({
     textInput: {
-        fontFamily: 'System',
+        fontFamily: BaseFont.fontMedium,
         color: BaseColors.heading,
         fontSize: 15,
         marginHorizontal: 20,
         marginRight: 40,
-        marginVertical: 10,
+        marginVertical: 5,
         borderBottomWidth: 1,
         borderBottomColor : 'rgba(0,0,0,0.05)',
     },

@@ -71,6 +71,17 @@
 		<string>Octicons.ttf</string>
 		<string>SimpleLineIcons.ttf</string>
 		<string>Zocial.ttf</string>
+		<string>FontsFree-Net-SFProText-Bold.ttf</string>
+		<string>FontsFree-Net-SFProText-Heavy.ttf</string>
+		<string>FontsFree-Net-SFProText-Light.ttf</string>
+		<string>FontsFree-Net-SFProText-Regular.ttf</string>
+		<string>FontsFree-Net-SFProText-Semibold.ttf</string>
+		<string>SFProText-Bold.ttf</string>
+		<string>SFProText-Heavy.ttf</string>
+		<string>SFProText-Light.ttf</string>
+		<string>SFProText-Medium.ttf</string>
+		<string>SFProText-Regular.ttf</string>
+		<string>SFProText-Semibold.ttf</string>
 	</array>
 </dict>
 </plist>

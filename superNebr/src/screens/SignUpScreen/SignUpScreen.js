@@ -5,6 +5,7 @@ import { View, Image, Text, TextInput, StyleSheet} from 'react-native';
 import logo from '../../assets/Images/companylogo.png';
 import HelperStyle from '../../styles/HelperStyle';
 import BaseColors from '../../constants/BaseColors';
+import BaseFont from '../../constants/BaseFont';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import {Picker} from '@react-native-community/picker';
 
@@ -20,7 +21,7 @@ const SignUpScreen = ({ navigation }) => {
                 style={{width: 170, height: 34 }}
             />
         </View>
-        <Text style={[HelperStyle.marginHorizontal20, HelperStyle.marginTop30, HelperStyle.marginBottom10, {fontSize: 34, textAlign: 'left', color : BaseColors.heading, fontFamily: 'System', fontWeight: 'bold'}]}>
+        <Text style={[HelperStyle.marginHorizontal20, HelperStyle.marginTop30, HelperStyle.marginBottom10, {fontSize: 34, textAlign: 'left', color : BaseColors.heading, fontFamily: BaseFont.fontBold}]}>
             Sign Up
         </Text>
         <View style={[HelperStyle.flexColumn, {marginVertical: 0}, HelperStyle.marginBottom20]}>
@@ -78,19 +79,19 @@ const SignUpScreen = ({ navigation }) => {
             </View>
             <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, HelperStyle.marginHorizontal30]}>
                 <Icon name={icon} size={30} color="#3B5998" />
-                <Text style={[HelperStyle.marginHorizontal40, HelperStyle.marginVertical10, {fontSize: 16, color : BaseColors.heading, fontFamily: 'System'}]}>
+                <Text style={[HelperStyle.marginHorizontal40, HelperStyle.marginVertical10, {fontSize: 16, color : BaseColors.heading, fontFamily: BaseFont.fontMedium}]}>
                     I Accept all Terms & Condition
                 </Text>
             </View>
         </View>
         <View style={[HelperStyle.flexRow, HelperStyle.marginVertical20, {backgroundColor : BaseColors.mustard, width: '75%', borderTopRightRadius: 30, borderBottomRightRadius: 30}, HelperStyle.paddingVertical15, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onStartShouldSetResponder={() => navigation.navigate('SignUp')}>
-            <Text style={[{fontSize: 17, color : 'white', fontFamily: 'System'}]}>
+            <Text style={[{fontSize: 17, color : 'white', fontFamily: BaseFont.fontMedium}]}>
                 Sign Up
             </Text>
             <Icon name="arrow-right" size={20} color="white" />
         </View>
-        <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter, HelperStyle.marginTop30]}>
-            <Text style={[{fontSize: 13, color : '#243177', fontFamily: 'System'}]}>
+        <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter, HelperStyle.marginTop50]}>
+            <Text style={[{fontSize: 13, color : '#243177', fontFamily: BaseFont.fontMedium}]}>
                 Already have an account? <Text style={{fontWeight: 'bold'}}>Sign In</Text>
             </Text>
         </View>
@@ -102,12 +103,12 @@ export default SignUpScreen;
 
 const styles = StyleSheet.create({
     textInput: {
-        fontFamily: 'System',
+        fontFamily: BaseFont.fontMedium,
         color: BaseColors.heading,
         fontSize: 15,
         marginHorizontal: 20,
         marginRight: 40,
-        marginVertical: 10,
+        marginVertical: 5,
         borderBottomWidth: 1,
         borderBottomColor : 'rgba(0,0,0,0.05)',
     },
