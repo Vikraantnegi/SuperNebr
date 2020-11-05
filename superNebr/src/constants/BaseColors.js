@@ -21,6 +21,7 @@ export default {
   inputColor: '#949597',
   red: '#FF0000',
 
+  mustard : '#FF962C',
 
   themeBluePrimary: '#6c5cff',
   themeBlueSecondary: '#E5E5E5;',
@@ -40,7 +41,8 @@ export default {
   themePurpleDark: '#7B4EC8',
   themeBackground : '#FCEAEC',
   BackgroundColor: {
-    color : '#FCEAEC',
+    backgroundColor : '#FCEAEC',
   },
+  heading : '#243177',
 
 };
