@@ -192,6 +192,9 @@ export default {
     marginBottom50: {
         marginBottom: 50,
     },
+    marginBottom80: {
+        marginBottom: 80,
+    },
 
     // margin left
     marginLeft5: {
