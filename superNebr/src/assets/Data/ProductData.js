@@ -14,18 +14,103 @@ export default [
         weight : '150 pounds',
         color : 'Navy Blue',
         dimensions : '110x60x80 cm',
+        src : 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
         reviews : 534,
+        star5 :  416,
+        star4 : 66,
+        star3 : 31,
+        star2 : 21,
+        star1 : 0,
         review1 : [
             {
+                sr : 0,
                 name : 'Amy Vasquez',
                 star : 3,
                 src : 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
-                rev : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern available on the market. However, and with that said, if you are like most people in the 21st century, you also live your life on a budget. You simply do not have a great deal of extra money to blow and spend at will. Therefore, with the goal of outfitting your kitchen with the latest, with the best in cookware, you also want to keep your eyes on ways in which you can save money on your cookware purchases. To this end, you might want to focus your attention on the Internet and the World Wide Web, specifically on overstock merchandise sites that are springing up all over the Net. There are many benefits that can be realized by shopping for cookware at overstock sites on the Net. First and foremost is price. In the vast majority of instances, you will be able to find up to date cookware for sale at these overstock websites for prices far less than what you will be able to find otherwise at different retail venues in either the brick and mortar world or on the World Wide Web. One of the other, important benefits to be realize by shopping for cookware for your home at overstock sites is found in the fact that they are very convenient. A consumer such as you literally can shop for cookware twenty four hours a day and seven days a week. If you are like most people in this day and age, not only are you living on a tight budget, but you are living on a tight schedule as well. You simply do not have the time available to you to shop around, to spend a great deal of time going from store to store, looking for cookware for your home. Thus, an Internet based overstock site can be a true godsend when it comes to saving time in your search for the best cookware for your own kitchen. As a final reminder, make certain that you only patronize those overstock sites that have established reputations for reliability. By shopping at an established site, you will make certain that you do obtain exactly the cookware products that you have bargained for while visiting one of the overstock venues on the Net.',
+                time : '1 day ago',
+                rev : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern available on the market. However, and with that said, if you are like most people in the 21st century, you also live your life on a budget.',
                 images : [
                     {
+                        sr : 0,
+                        src : 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
+                    },
+                    {
+                        sr : 1,
+                        src : 'https://www.audi.com/content/dam/ci/Fundamentals/Basics/Colours/04_Grautoene_Elemente/Audi_Brandplattform_Colours_Element-15.png?imwidth=1200',
+                    },
+                    {
+                        sr : 2,
+                        src : 'https://www.audi.com/content/dam/ci/Fundamentals/Basics/Colours/04_Grautoene_Elemente/Audi_Brandplattform_Colours_Element-15.png?imwidth=1200',
+                    },
+                    {
+                        sr : 3,
+                        src : 'https://www.audi.com/content/dam/ci/Fundamentals/Basics/Colours/04_Grautoene_Elemente/Audi_Brandplattform_Colours_Element-15.png?imwidth=1200',
+                    },
+                ],
+            },
+            {
+                sr : 1,
+                name : 'Amy Vasquez',
+                star : 3,
+                src : 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
+                time : '1 day ago',
+                rev : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern available on the market. However, and with that said, if you are like most people in the 21st century, you also live your life on a budget.',
+                images : [
+                    {
+                        sr : 0,
                         src : '',
                     },
                 ],
+            },
+            {
+                sr : 2,
+                name : 'Amy Vasquez',
+                star : 3,
+                src : 'https://cdn.shopify.com/s/files/1/0045/5104/9304/t/27/assets/AC_ECOM_SITE_2020_REFRESH_1_INDEX_M2_THUMBS-V2-1.jpg?v=8913815134086573859',
+                time : '1 day ago',
+                rev : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern available on the market. However, and with that said, if you are like most people in the 21st century, you also live your life on a budget.',
+                images : [
+                    {
+                        sr : 0,
+                        src : '',
+                    },
+                ],
+            },
+        ],
+        shades : [
+            {
+                sr : 0,
+                color : '#570E1E',
+            },
+            {
+                sr : 1,
+                color : '#FFAD00',
+            },
+            {
+                sr : 2,
+                color : '#1B2749',
+            },
+            {
+                sr : 3,
+                color : '#00BECE',
+            },
+            {
+                sr : 4,
+                color : '#A24040',
+            },
+        ],
+        sizes : [
+            {
+                sr : 0,
+                color : 'S',
+            },
+            {
+                sr : 1,
+                color : 'M',
+            },
+            {
+                sr : 2,
+                color : 'L',
             },
         ],
     },

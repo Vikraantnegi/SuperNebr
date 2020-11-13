@@ -22,7 +22,7 @@ const LoginScreen = ({ navigation }) => {
     }
 
   return (
-    <View style={[{flex : 1}, BaseColors.BackgroundColor, HelperStyle.paddingVertical20]}>
+    <View style={[{flex : 1}, BaseColors.BackgroundColor, HelperStyle.paddingVertical40]}>
         <ScrollView
             scrollEventThrottle={16}
             showsVerticalScrollIndicator={false}

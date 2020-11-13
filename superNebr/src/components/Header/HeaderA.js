@@ -7,12 +7,12 @@ import { useNavigation } from '@react-navigation/native';
 import BaseFont from '../../constants/BaseFont';
 import HelperStyle from '../../styles/HelperStyle';
 
-export default function Header ({page, name}){
+export default function HeaderA ({page, name}){
     const navigation = useNavigation();
     return (
         <View style={styles.header}>
             <View style={[HelperStyle.marginVertical20, HelperStyle.marginHorizontal20, HelperStyle.flexRow, HelperStyle.flexAlignCenter]}>
-                <Icon name="arrow-left" type="FontAwesome5" style={styles.arrow} onPress={() => navigation.navigate({page})} />
+                <Icon name="arrow-left" type="FontAwesome5" style={styles.arrow} onPress={() => navigation.navigate(page)} />
                 <Text style={{fontFamily: BaseFont.fontBold, fontSize: 15, color: 'white', marginLeft: 10}}>{name}</Text>
             </View>
             <View style={[HelperStyle.marginVertical20, HelperStyle.marginHorizontal20, HelperStyle.flexRow, HelperStyle.flexAlignCenter]}>

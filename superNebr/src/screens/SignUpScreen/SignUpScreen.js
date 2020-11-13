@@ -11,7 +11,6 @@ import {Picker} from '@react-native-community/picker';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 
 const width = Dimensions.get('window').width;
-const height = Dimensions.get('window').height;
 
 let width1 = '25%';
 let width2 = '63%';
@@ -40,7 +39,7 @@ const SignUpScreen = ({ navigation }) => {
         box = 'square-o';
     }
     return (
-        <View style={[{flex: 1}, BaseColors.BackgroundColor, HelperStyle.paddingVertical20]}>
+        <View style={[{flex: 1}, BaseColors.BackgroundColor, HelperStyle.paddingVertical40]}>
             <ScrollView
                 scrollEventThrottle={16}
                 showsVerticalScrollIndicator={false}

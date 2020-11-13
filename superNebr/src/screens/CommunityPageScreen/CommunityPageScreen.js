@@ -16,7 +16,7 @@ const CommunityPageScreen = ({ navigation }) => {
     const [comm, setcomm] = React.useState('');
   return (
     <View style={[{height: height, width: width}, BaseColors.BackgroundColor]}>
-        <Header page="SignUp" />
+        <Header page="SignUp" name="Community" />
         <ScrollView
             scrollEventThrottle={16}
             showsVerticalScrollIndicator={false}

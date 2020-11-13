@@ -23,6 +23,10 @@ import ElectronicsScreen from '../../screens/ElectronicsScreen/ElectronicsScreen
 import HistoryScreen from '../../screens/HistoryScreen/HistoryScreen';
 import NotificationsScreen from '../../screens/NotificationsScreen/NotificationsScreen';
 import ProductDetailScreen from '../../screens/ProductDetailScreen/ProductDetailScreen';
+import ReviewsScreen from '../../screens/ReviewsScreen/ReviewsScreen';
+import AddAddressScreen from '../../screens/AddAddressScreen/AddAddressScreen';
+import AddNewAddressScreen from '../../screens/AddNewAddressScreen/AddNewAddressScreen';
+import EditProfileScreen from '../../screens/EditProfileScreen/EditProfileScreen';
 
 const Stack = createStackNavigator();
 
@@ -53,6 +57,10 @@ const AppNavigator = () => {
         <Stack.Screen name="History" component={HistoryScreen} />
         <Stack.Screen name="Notifications" component={NotificationsScreen} />
         <Stack.Screen name="ProductDetail" component={ProductDetailScreen} />
+        <Stack.Screen name="Reviews" component={ReviewsScreen} />
+        <Stack.Screen name="AddAddress" component={AddAddressScreen} />
+        <Stack.Screen name="AddNewAddress" component={AddNewAddressScreen} />
+        <Stack.Screen name="EditProfile" component={EditProfileScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

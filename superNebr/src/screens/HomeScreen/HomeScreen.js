@@ -32,7 +32,7 @@ class HomeScreen extends React.Component {
                 >
                     <View style={[HelperStyle.flex1, {marginBottom: 70}]}>
                         <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, HelperStyle.flexBetween, HelperStyle.marginHorizontal20, HelperStyle.marginVertical20 ]}>
-                            <Icon name="menu" type="Entypo" style={{fontSize: 30, color: '#243177'}} onPress={() => this.openControlPanel()} />
+                            <Icon name="menu" type="Entypo" style={{fontSize: 30, color: '#243177'}} onPress={() => navigation.navigate('LeftSidebar')} />
                             <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, {marginRight: -35}]}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, color : '#243177', fontSize: 16, marginRight: 10}}>Ivy Nagar</Text>
                                 <Icon name="chevron-down" type="FontAwesome" style={{fontSize: 18, color: '#243177'}} />
@@ -88,7 +88,7 @@ class HomeScreen extends React.Component {
                         <View style={[HelperStyle.flexColumn, HelperStyle.marginHorizontal20, HelperStyle.marginVertical10]}>
                             <View style={[HelperStyle.flexRow, HelperStyle.flexBetween]}>
                                 <Text style={{fontFamily: BaseFont.fontExtraBold, color : '#243177', fontSize: 15}}>Best Seller</Text>
-                                <Text style={{fontFamily: BaseFont.fontBold, color : '#243177', fontSize: 15}}>See All</Text>
+                                <Text style={{fontFamily: BaseFont.fontBold, color : '#243177', fontSize: 15}} onPress={() => navigation.navigate('AddAddress')}>See All</Text>
                             </View>
                             <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, HelperStyle.flexBetween, {flexWrap: 'wrap', marginVertical: 10}]}>
                                 {BestSellerData.map(item => (
