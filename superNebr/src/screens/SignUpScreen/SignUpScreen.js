@@ -56,7 +56,7 @@ const SignUpScreen = ({ navigation }) => {
                         Sign Up
                     </Text>
                     <View style={[HelperStyle.flexColumn, HelperStyle.marginBottom20]}>
-                        <TouchableOpacity activeOpacity={1} style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter]} onPress={() => navigation.navigate('CommunityPage')}>
+                        <TouchableOpacity activeOpacity={0.5} style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter]} onPress={() => navigation.navigate('CommunityPage')}>
                             <Text
                                 style={[styles.textInput, {width: '84.5%', paddingVertical: 15, paddingLeft: 5}]}>
                             Select Community</Text>
@@ -107,6 +107,7 @@ const SignUpScreen = ({ navigation }) => {
                                 autoCorrect={false}
                                 style={[styles.textInput, {marginLeft: -50, width: width2}]}
                                 placeholder="Phone"
+                                keyboardType="numeric"
                                 placeholderStyle={{ fontFamily: BaseFont.fontMedium }}
                                 placeholderTextColor = {BaseColors.heading}
                             />
@@ -118,24 +119,24 @@ const SignUpScreen = ({ navigation }) => {
                             </Text>
                         </View>
                     </View>
-                    <TouchableOpacity activeOpacity={1} style={[HelperStyle.flexRow, {backgroundColor : BaseColors.mustard, width: '75%', borderTopRightRadius: 30, borderBottomRightRadius: 30, elevation: 3, marginBottom: 10, paddingVertical: 12.5}, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onPress={() => navigation.navigate('Login')}>
+                    <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexRow, {backgroundColor : BaseColors.mustard, width: '75%', borderTopRightRadius: 30, borderBottomRightRadius: 30, elevation: 3, marginBottom: 10, paddingVertical: 12.5}, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onPress={() => navigation.navigate('Login')}>
                         <Text style={[{fontSize: 17, color : 'white', fontFamily: BaseFont.fontMedium}]}>
                             Sign Up
                         </Text>
                         <Icon name="arrow-right" type="FontAwesome" style={{fontSize: 20, color: 'white'}} />
                     </TouchableOpacity>
-                    <TouchableOpacity activeOpacity={1} style={[HelperStyle.flexRow, {backgroundColor : '#243177', width: '50%', borderTopRightRadius: 30, borderBottomRightRadius: 30, elevation: 3, paddingVertical: 12.5}, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onPress={() => navigation.navigate('Home')}>
+                    <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexRow, {backgroundColor : '#243177', width: '50%', borderTopRightRadius: 30, borderBottomRightRadius: 30, elevation: 3, paddingVertical: 12.5}, HelperStyle.paddingHorizontal20, HelperStyle.flexBetween ]} onPress={() => navigation.navigate('Home')}>
                         <Text style={[{fontSize: 17, color : 'white', fontFamily: BaseFont.fontMedium}]}>
                             Skip
                         </Text>
                         <Icon name="arrow-right" type="FontAwesome" style={{fontSize: 20, color: 'white'}} />
                     </TouchableOpacity>
                 </View>
-                <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]}>
+                <TouchableOpacity activeOpacity={0.5} style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]} onPress={() => navigation.navigate('Login')}>
                     <Text style={[{fontSize: 13, color : '#243177', fontFamily: BaseFont.fontMedium}]}>
-                        Already have an account? <Text style={{fontWeight: 'bold'}} onPress={() => navigation.navigate('Login')}>Sign In</Text>
+                        Already have an account? <Text style={{fontWeight: 'bold'}}>Sign In</Text>
                     </Text>
-                </View>
+                </TouchableOpacity>
             </ScrollView>
         </View>
     );

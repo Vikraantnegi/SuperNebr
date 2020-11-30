@@ -17,15 +17,12 @@ export default class Tab extends React.Component {
         } else if (title === 'Search') {
             iconType = 'FontAwesome';
             iconName = 'search';
-        } else if (title === 'Cart') {
-            iconType = 'Feather';
-            iconName = 'shopping-cart';
-        } else if (title === 'Wishlist') {
-            iconType = 'FontAwesome';
-            iconName = 'heart';
         } else if (title === 'My') {
             iconType = 'FontAwesome5';
             iconName = 'user-alt';
+        } else if (title === 'Shops') {
+            iconType = 'Entypo';
+            iconName = 'shop';
         }
 
         return (

@@ -11,7 +11,7 @@ const height = Dimensions.get('screen').height;
 
 const SplashScreen = ({ navigation }) => {
   setTimeout(() => {
-    navigation.replace('Login');
+    navigation.replace('OnBoarding');
   }, 1500);
 
   return (

@@ -33,24 +33,28 @@ const MyProfileScreen = ({ navigation }) => {
                             <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading}}>{user.address}</Text>
                         </View>
                         <View style={[HelperStyle.flexColumn, HelperStyle.marginVertical40]}>
-                            <View style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]}>
+                            <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]} onPress={() => navigation.navigate('MyOrders')}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading, paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}}>My Orders</Text>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 10, color: BaseColors.heading, paddingVertical: 5, textAlign: 'right'}}>See All Orders</Text>
-                            </View>
-                            <View style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]} onPress={() => navigation.navigate('MyReviews')}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading, paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}}>My Reviews</Text>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 10, color: BaseColors.heading, paddingVertical: 5, textAlign: 'right'}}>See All Reviews</Text>
-                            </View>
-                            <View style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]} onPress={() => navigation.navigate('MyPolls')}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading, paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}}>My Polls</Text>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 10, color: BaseColors.heading, paddingVertical: 5, textAlign: 'right'}}>See All Polls</Text>
-                            </View>
-                            <View style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]} onPress={() => navigation.navigate('MyAddress')}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading, paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}}>My Addresses</Text>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 10, color: BaseColors.heading, paddingVertical: 5, textAlign: 'right'}}>See All Addresses</Text>
-                            </View>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexColumn, BaseColors.BackgroundColor, styles.shadow, HelperStyle.paddingHorizontal20, HelperStyle.paddingVertical10, {marginVertical : 10}]} onPress={() => navigation.navigate('MyBlogs')}>
+                                <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, color: BaseColors.heading, paddingVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}}>My Blogs</Text>
+                                <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 10, color: BaseColors.heading, paddingVertical: 5, textAlign: 'right'}}>See All Blogs</Text>
+                            </TouchableOpacity>
                         </View>
-                        <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#FF962C', borderRadius: 30}, HelperStyle.flexRow, HelperStyle.flexCenter, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10, HelperStyle.marginHorizontal20]} onPress={() => navigation.navigate()}>
+                        <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#FF962C', borderRadius: 30}, HelperStyle.flexRow, HelperStyle.flexCenter, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10, HelperStyle.marginHorizontal20]} onPress={() => navigation.navigate('Login')}>
                             <Icon name="logout" type="MaterialIcons" style={{fontSize: 20, marginRight: 5, color : 'white'}} />
                             <Text style={[{fontFamily: BaseFont.fontBold, fontSize: 17, color: 'white' }]}>
                                 Logout

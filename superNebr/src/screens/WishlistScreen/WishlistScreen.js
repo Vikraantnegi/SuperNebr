@@ -21,7 +21,7 @@ const WishlistScreen = ({ navigation }) => {
             >
                 <View style={[HelperStyle.flexColumn, HelperStyle.marginHorizontal20, HelperStyle.marginVertical20, HelperStyle.marginBottom80]}>
                     {WishlistData.map(item => (
-                        <WishlistCard key={item.sr} img={item.src} name={item.name} color={item.color} price={item.price} discountedprice = {item.discountedprice}  />
+                        <WishlistCard key={item.sr} percent={item.percent} img={item.src} name={item.name} color={item.color} price={item.price} discountedprice = {item.discountedprice}  />
                     ))}
                 </View>
             </ScrollView>

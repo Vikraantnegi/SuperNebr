@@ -26,7 +26,6 @@ const NotificationsScreen = ({ navigation }) => {
                     ))}
                 </View>
             </ScrollView>
-            <BottomNavigation activeScreen="Wishlist" navigation={navigation} />
         </View>
     );
 };

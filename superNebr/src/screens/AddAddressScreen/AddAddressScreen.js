@@ -14,7 +14,7 @@ const AddAddressScreen = ({ navigation }) => {
     const [select, setselect] = React.useState(0);
     return (
         <View style={[HelperStyle.flex1, BaseColors.BackgroundColor]}>
-            <HeaderB page="Home" name="Add Addresses" />
+            <HeaderB page="Cart" name="Add Addresses" />
             <View style={[HelperStyle.flex1, HelperStyle.flexColumn, HelperStyle.flexBetween, HelperStyle.marginBottom40]}>
                 <View style={[HelperStyle.flexColumn, HelperStyle.marginHorizontal20, HelperStyle.marginVertical20]}>
                     <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, HelperStyle.marginVertical10, HelperStyle.marginBottom20]}>
@@ -26,7 +26,7 @@ const AddAddressScreen = ({ navigation }) => {
                         </TouchableOpacity>
                     </View>
                     {UserAddresses.map(address => (
-                        <View key={address.sr} style={[HelperStyle.flexRow, HelperStyle.marginVertical10, HelperStyle.paddingVertical10, {borderBottomColor: '#DFE0E5', borderBottomWidth: 1, justifyContent:'flex-start'}]}>
+                        <TouchableOpacity activeOpacity={0.8} onPress={() => setselect(address.sr)} key={address.sr} style={[HelperStyle.flexRow, HelperStyle.marginVertical10, HelperStyle.paddingVertical10, {borderBottomColor: '#DFE0E5', borderBottomWidth: 1, justifyContent:'flex-start'}]}>
                             {select === address.sr ? (
                                 <Icon name ="circle" type="FontAwesome" style={{fontSize: 15, color : BaseColors.heading, marginRight: 10}} />
                             ) : (
@@ -43,12 +43,12 @@ const AddAddressScreen = ({ navigation }) => {
                                     <Text style={[{fontFamily: BaseFont.fontMedium, fontSize: 11, color: '#7F8592' }]}>
                                         {address.flat}, {address.block}
                                     </Text>
-                                    <TouchableOpacity activeOpacity={1} style={[HelperStyle.flexAlignCenter, {backgroundColor: BaseColors.heading, borderRadius: 5}]}>
-                                        <Icon name ="edit" type="AntDesign" style={{fontSize: 15, color : 'white', padding: 3}} />
+                                    <TouchableOpacity activeOpacity={0.8} style={[HelperStyle.flexAlignCenter, {backgroundColor: BaseColors.heading, borderRadius: 5}]}>
+                                        <Icon name ="edit" type="AntDesign" style={{fontSize: 10, color : 'white', padding: 3}} />
                                     </TouchableOpacity>
                                 </View>
                             </View>
-                        </View>
+                        </TouchableOpacity>
                     ))}
                 </View>
                 <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#FF962C', borderRadius: 25}, HelperStyle.marginHorizontal20, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10]} onPress={() => navigation.navigate()}>

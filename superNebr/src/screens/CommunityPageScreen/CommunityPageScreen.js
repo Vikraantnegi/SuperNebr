@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import { View, Image, Text, TextInput, StyleSheet, Dimensions, ScrollView} from 'react-native';
+import { View, Image, Text, TextInput, StyleSheet, Dimensions, ScrollView, TouchableOpacity} from 'react-native';
 import Header from '../../components/Header/Header';
 import HelperStyle from '../../styles/HelperStyle';
 import BaseColors from '../../constants/BaseColors';
@@ -16,7 +16,7 @@ const CommunityPageScreen = ({ navigation }) => {
     const [comm, setcomm] = React.useState('');
   return (
     <View style={[{height: height, width: width}, BaseColors.BackgroundColor]}>
-        <Header page="SignUp" name="Community" />
+        <Header page="SignUp" name="Select Community" />
         <ScrollView
             scrollEventThrottle={16}
             showsVerticalScrollIndicator={false}
@@ -41,20 +41,20 @@ const CommunityPageScreen = ({ navigation }) => {
                         contentContainerStyle={{ flexGrow: 1 }}
                     >
                         {CommunityListData.map(community => (
-                            <View key={community.sr} style={[HelperStyle.marginHorizontal20, HelperStyle.paddingLeft20, {marginVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}]}>
+                            <TouchableOpacity activeOpacity={0.5} key={community.sr} style={[HelperStyle.marginHorizontal20, HelperStyle.paddingLeft20, {marginVertical: 5, borderBottomWidth: 1, borderBottomColor: '#DFE0E5'}]}>
                                 <Text style={{fontFamily: BaseFont.fontBold, fontSize : 17, color : '#243177', paddingVertical: 15}}>
-                                    {community.name}
+                                    {community.builder} - {community.name}
                                 </Text>
-                            </View>
+                            </TouchableOpacity>
                         ))}
                     </ScrollView>
                 </View>
             </View>
-            <View style={[HelperStyle.flexAlignCenter]}>
-                <Text style={{fontFamily: BaseFont.fontBold, fontSize : 13, color : '#243177', textDecorationLine: 'underline'}} onPress={() => navigation.navigate('AddCommunityPage')}>
-                Request Add Community
+            <TouchableOpacity activeOpacity={0.5} style={[HelperStyle.flexAlignCenter]} onPress={() => navigation.navigate('AddCommunityPage')}>
+                <Text style={{fontFamily: BaseFont.fontBold, fontSize : 13, color : '#243177', textDecorationLine: 'underline'}}>
+                    Request to Add new Community
                 </Text>
-            </View>
+            </TouchableOpacity>
         </ScrollView>
     </View>
   );
@@ -64,7 +64,7 @@ export default CommunityPageScreen;
 
 const styles = StyleSheet.create({
     textInput: {
-        fontFamily: BaseFont.fontMedium,
+        fontFamily: BaseFont.fontBold,
         color: BaseColors.heading,
         fontSize: 15,
         marginHorizontal: 10,

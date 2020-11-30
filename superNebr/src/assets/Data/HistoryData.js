@@ -6,7 +6,7 @@ export default [
         src : 'https://www.sandyspringbuilders.com/wp-content/uploads/2015/10/MG_3485.jpg',
         price : 200,
         color : '#E5979C',
-        status : 'Coming',
+        status : 'Arriving',
     },
     {
         sr : 2,

@@ -43,7 +43,7 @@ class HomeCarousel extends React.Component{
             <Pagination
               dotsLength={images.length}
               activeDotIndex={activeIndex}
-              containerStyle={{ backgroundColor: '#FCEAEC', alignItems: 'center', marginHorizontal: '45%' }}
+              containerStyle={{ backgroundColor: '#FCEAEC', alignItems: 'center', marginHorizontal: '45%', paddingVertical: 15 }}
               dotStyle={{
                   width: 10,
                   height: 10,

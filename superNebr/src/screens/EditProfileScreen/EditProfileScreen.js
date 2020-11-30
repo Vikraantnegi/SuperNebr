@@ -57,11 +57,12 @@ const EditProfileScreen = ({ navigation }) => {
                                     placeholderTextColor = {BaseColors.heading}
                                     value={contact}
                                     keyboardType = "numeric"
+                                    editable={false}
                                     onChangeText={(text) => setcontact(text)}
                                 />
                             </View>
                             <View style={[HelperStyle.flexColumn, {paddingVertical : 5}]}>
-                                <TouchableOpacity activeOpacity={1} style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, {paddingVertical: 5}]} onPress={() => navigation.navigate('CommunityPage')}>
+                                <TouchableOpacity activeOpacity={0.6} style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter, {paddingVertical: 5}]} onPress={() => navigation.navigate('CommunityPage')}>
                                     <Text style={[styles.textInput, {fontFamily: BaseFont.fontMedium, width: '91%', paddingVertical: 5}]}>
                                         Community
                                     </Text>
@@ -74,30 +75,29 @@ const EditProfileScreen = ({ navigation }) => {
                                     autoCapitalize="none"
                                     autoCorrect={false}
                                     style={styles.textInput}
-                                    placeholder="Name"
+                                    placeholder="Email"
                                     placeholderStyle={{ fontFamily: BaseFont.fontMedium}}
                                     placeholderTextColor = {BaseColors.heading}
                                     value={mail}
+                                    editable={false}
                                     onChangeText={(text) => setmail(text)}
                                 />
                             </View>
-                            <View style={[HelperStyle.flexColumn, HelperStyle.marginBottom5]}>
+                            <TouchableOpacity activeOpacity={0.6} style={[HelperStyle.flexColumn, HelperStyle.marginBottom5]}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: '#D4D4D4', color: BaseColors.heading}}>Change Password</Text>
-                            </View>
-                            <View style={[HelperStyle.flexColumn]}>
+                            </TouchableOpacity>
+                            <TouchableOpacity activeOpacity={0.6} style={[HelperStyle.flexColumn]}>
                                 <Text style={{fontFamily: BaseFont.fontSemi, fontSize: 15, paddingVertical: 10, borderBottomWidth: 1, borderBottomColor: '#D4D4D4', color: BaseColors.heading}}>Deactivate Account</Text>
-                            </View>
+                            </TouchableOpacity>
                         </View>
-                        <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#FF962C', borderRadius: 30}, HelperStyle.flexRow, HelperStyle.flexCenter, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10, HelperStyle.marginHorizontal20]} onPress={() => navigation.navigate()}>
-                            <Icon name="logout" type="MaterialIcons" style={{fontSize: 20, marginRight: 5, color : 'white'}} />
+                        <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#FF962C', borderRadius: 30}, HelperStyle.flexRow, HelperStyle.flexCenter, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10, HelperStyle.marginVertical10, HelperStyle.marginHorizontal20]} onPress={() => navigation.navigate()}>
                             <Text style={[{fontFamily: BaseFont.fontBold, fontSize: 17, color: 'white' }]}>
-                                Logout
+                                Save
                             </Text>
                         </TouchableOpacity>
                     </View>
                 ))}
             </ScrollView>
-            <BottomNavigation activeScreen="My" navigation={navigation} />
         </View>
     );
 };

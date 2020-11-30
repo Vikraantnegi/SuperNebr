@@ -8,6 +8,7 @@ export default [
         discountpercent : 50,
         rating : 4.8,
         desc : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern angles, this loveseat is both comfortable and stylish.',
+        longdesc : 'This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern angles, this loveseat is both comfortable and stylish.This chair is a great addition for any room in your home, not only just the living room. Featuring a mid-century design with modern angles, this loveseat is both comfortable and stylish.',
         material : '100% Polyester',
         frame : 'Wood',
         country : 'Italy',

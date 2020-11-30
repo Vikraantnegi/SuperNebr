@@ -13,8 +13,8 @@ const HomeDeals = ({navigation}) => {
     return (
         <View>
         {DealoftheDay.map(entry => (
-            <View key={entry.sr} style={[{width: width}, HelperStyle.marginVertical10, styles.shadow, {backgroundColor: '#FCEAEC', borderRadius: 10 }]}>
-                <TouchableOpacity activeOpacity={1} style={[styles.tag , HelperStyle.flexAlignCenter, HelperStyle.flexCenter, {marginBottom: -10}]} >
+            <TouchableOpacity activeOpacity={0.8} key={entry.sr} style={[{width: width}, HelperStyle.marginVertical10, styles.shadow, {backgroundColor: '#FFF3F5', borderRadius: 10 }]}>
+                <TouchableOpacity activeOpacity={0.8} style={[styles.tag , HelperStyle.flexAlignCenter, HelperStyle.flexCenter, {marginBottom: -10}]} >
                     <Text style={{fontFamily: BaseFont.fontBold, color: 'white', fontSize: 11}}>
                         {entry.discountpercent}
                     </Text>
@@ -44,7 +44,7 @@ const HomeDeals = ({navigation}) => {
                         </View>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
         ))}
         </View>
     );

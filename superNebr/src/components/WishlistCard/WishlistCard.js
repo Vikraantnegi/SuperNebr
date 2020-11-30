@@ -8,10 +8,10 @@ import {Icon} from 'native-base';
 import { TouchableOpacity } from 'react-native-gesture-handler';
 import BaseColors from '../../constants/BaseColors';
 
-const WishlistCard = ({name, img, color, price, discountedprice}) => {
+const WishlistCard = ({name, img, color, price, discountedprice, percent}) => {
     const width = Dimensions.get('window').width - 40;
     return (
-        <View style={[{width: width}, styles.shadow, HelperStyle.marginVertical10, HelperStyle.paddingBottom20, {backgroundColor: '#FCEAEC', borderRadius: 10, padding: 10 }]}>
+        <View style={[{width: width}, styles.shadow, HelperStyle.marginVertical10, HelperStyle.paddingBottom20, {backgroundColor: '#FFFFFF', borderRadius: 10, padding: 10 }]}>
             <Icon name="circle-with-cross" type="Entypo" style={{fontSize: 20, color: BaseColors.heading, position : 'absolute', right: 5, top: 5}} />
             <View style={[HelperStyle.flexRow, HelperStyle.flexAlignCenter]} >
                 <View style={[HelperStyle.flexRow, {width: '30%'}]}>
@@ -31,8 +31,13 @@ const WishlistCard = ({name, img, color, price, discountedprice}) => {
                         <Text style={{fontFamily: BaseFont.fontMedium, color: '#243177', fontSize: 13}}>
                             ₹{price}
                         </Text>
+                        {discountedprice > 0 ? (
+                            <Text style={{fontFamily: BaseFont.fontMedium, color: '#22A730', fontSize: 10, marginLeft: 5}}>
+                                {percent}Off
+                            </Text>
+                        ) : null}
                     </View>
-                    <View activeOpacity={1} style={[ HelperStyle.flexRow, HelperStyle.flexAlignCenter ]}>
+                    <View style={[ HelperStyle.flexRow, HelperStyle.flexAlignCenter ]}>
                         <Icon name="color-palette" type="Ionicons" style={{fontSize: 15, color : '#7F8592'}} />
                         <Text style={{fontFamily: BaseFont.fontMedium, color: '#7F8592', fontSize: 13, marginHorizontal: 5}}>
                             Color :

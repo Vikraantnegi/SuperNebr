@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable react-native/no-inline-styles */
 import React from 'react';
-import {View, StyleSheet, Text} from 'react-native';
+import {View, StyleSheet, Text, TouchableOpacity} from 'react-native';
 import {Icon} from 'native-base';
 import { useNavigation } from '@react-navigation/native';
 import BaseColors from '../../constants/BaseColors';
@@ -11,7 +11,9 @@ export default function Header ({page, name}){
     const navigation = useNavigation();
     return (
         <View style={styles.header}>
-            <Icon name="arrow-left" type="FontAwesome5" style={styles.arrow} onPress={() => navigation.navigate({page})} />
+            <TouchableOpacity activeOpacity={0.5} onPress={() => navigation.navigate(page)}>
+                <Icon name="arrow-left" type="FontAwesome5" style={styles.arrow} />
+            </TouchableOpacity>
             <Text style={{fontSize: 18, color: BaseColors.heading, fontFamily: BaseFont.fontBold}}>{name}</Text>
             <Text></Text>
         </View>
@@ -28,7 +30,7 @@ const styles = StyleSheet.create({
         margin: 20,
     },
     arrow: {
-        fontSize: 25,
+        fontSize: 15,
         color: '#243177',
     },
 });

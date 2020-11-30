@@ -12,6 +12,7 @@ const height = Dimensions.get('window').height;
 
 const CommunityPageScreen = ({ navigation }) => {
     const [commname, setcommname] = React.useState('');
+    const [builder, setbuilder] = React.useState('');
     let bgColor = '';
 
     if (commname.length > 0){
@@ -56,6 +57,16 @@ const CommunityPageScreen = ({ navigation }) => {
                         autoCapitalize="none"
                         autoCorrect={false}
                         style={styles.textInput}
+                        placeholder="Builder Name"
+                        defaultValue={builder}
+                        onChangeText={(text) => setbuilder(text)}
+                        placeholderStyle={{ fontFamily: BaseFont.fontMedium }}
+                        placeholderTextColor = {BaseColors.heading}
+                    />
+                    <TextInput
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        style={styles.textInput}
                         placeholder="Community Name"
                         defaultValue={commname}
                         onChangeText={(text) => setcommname(text)}
@@ -67,6 +78,15 @@ const CommunityPageScreen = ({ navigation }) => {
                         autoCorrect={false}
                         style={styles.textInput}
                         placeholder="Address (Optional)"
+                        placeholderStyle={{ fontFamily: BaseFont.fontMedium }}
+                        placeholderTextColor = {BaseColors.heading}
+                    />
+                    <TextInput
+                        autoCapitalize="none"
+                        autoCorrect={false}
+                        style={styles.textInput}
+                        placeholder="Pincode"
+                        keyboardType="numeric"
                         placeholderStyle={{ fontFamily: BaseFont.fontMedium }}
                         placeholderTextColor = {BaseColors.heading}
                     />

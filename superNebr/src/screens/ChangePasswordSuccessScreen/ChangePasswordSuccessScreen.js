@@ -14,11 +14,11 @@ const ChangePasswordSuccessScreen = ({ navigation }) => {
     return (
         <View style={[HelperStyle.flex1, BaseColors.BackgroundColor]}>
             <View style={[HelperStyle.flex1, HelperStyle.flexColumn, HelperStyle.flexBetween, HelperStyle.marginBottom40]}>
-                <Header page="Login" />
+                <View></View>
                 <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.marginBottom20]}>
                     <Image source={successpassword} style={[HelperStyle.marginVertical10]}/>
                     <Text style={[HelperStyle.textCenter, {fontSize: 22, color: '#243177', fontFamily: BaseFont.fontMedium}]}>
-                        Change password{'\n'} successfully!
+                        Password changed{'\n'} successfully!
                     </Text>
                 </View>
                 <View style={[HelperStyle.flexColumn, HelperStyle.marginHorizontal20]}>

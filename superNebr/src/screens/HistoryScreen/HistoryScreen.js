@@ -17,7 +17,7 @@ const CartScreen = ({ navigation }) => {
             <HeaderA name="History" page="Home" />
             <View style={[HelperStyle.flexRow, HelperStyle.marginHorizontal20, HelperStyle.marginVertical20, {borderWidth: 1, borderRadius: 5, borderColor: BaseColors.heading}]}>
                 <Text style={{color : Active === 'first' ? '#FF962C' : BaseColors.heading , fontFamily: BaseFont.fontBold, width: '33%', textAlign: 'center', paddingVertical: 5}} onPress={() => setActive('first')}>All</Text>
-                <Text style={{color : Active === 'second' ? '#FF962C' : BaseColors.heading , fontFamily: BaseFont.fontBold, width: '33%', textAlign: 'center', paddingVertical: 5, borderLeftWidth: 1, borderRightWidth: 1, borderColor: BaseColors.heading}} onPress={() => setActive('second')}>Coming</Text>
+                <Text style={{color : Active === 'second' ? '#FF962C' : BaseColors.heading , fontFamily: BaseFont.fontBold, width: '33%', textAlign: 'center', paddingVertical: 5, borderLeftWidth: 1, borderRightWidth: 1, borderColor: BaseColors.heading}} onPress={() => setActive('second')}>Arriving</Text>
                 <Text style={{color : Active === 'third' ? '#FF962C' : BaseColors.heading , fontFamily: BaseFont.fontBold, width: '33%', textAlign: 'center', paddingVertical: 5}} onPress={() => setActive('third')}>Received</Text>
             </View>
             <View style={[HelperStyle.flexRow, HelperStyle.marginHorizontal20, HelperStyle.marginBottom10, {justifyContent: 'space-around'}]}>

@@ -10,7 +10,7 @@ import { TouchableOpacity } from 'react-native-gesture-handler';
 const HistoryCard = ({name, img, color, price, status}) => {
     const width = Dimensions.get('window').width - 40;
     let bgColor = '';
-    if (status === 'Coming'){
+    if (status === 'Arriving'){
         bgColor = '#00BECE';
     }
     else {
@@ -32,16 +32,16 @@ const HistoryCard = ({name, img, color, price, status}) => {
                             ₹{price}
                         </Text>
                     </View>
-                    <TouchableOpacity activeOpacity={1} style={[{ width : '90%', backgroundColor: '#DFE0E580', borderRadius: 15, padding: 5, justifyContent: 'space-around'}, HelperStyle.flexRow, HelperStyle.flexAlignCenter]}>
+                    <TouchableOpacity activeOpacity={0.5} style={[{ width : '90%', backgroundColor: '#DFE0E580', borderRadius: 15, padding: 5, justifyContent: 'space-around'}, HelperStyle.flexRow, HelperStyle.flexAlignCenter]}>
                         <Icon name="color-palette" type="Ionicons" style={{fontSize: 15, color : '#7F8592'}} />
                         <Text style={{fontFamily: BaseFont.fontMedium, color: '#7F8592', fontSize: 13, marginRight: 5}}>
                             Color :
                         </Text>
-                        <TouchableOpacity activeOpacity={1} style={[{backgroundColor: color, height: 16, width: 16, borderRadius: 8}]} />
+                        <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: color, height: 16, width: 16, borderRadius: 8}]} />
                     </TouchableOpacity>
                 </View>
                 <View style={[HelperStyle.flexColumn, HelperStyle.flexAlignCenter, {justifyContent: 'flex-start' , width: '30%', height: 80}]}>
-                    <TouchableOpacity activeOpacity={1} style={[{backgroundColor: bgColor, padding: 5, paddingHorizontal: 10, borderRadius: 10},HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]}>
+                    <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: bgColor, padding: 5, paddingHorizontal: 10, borderRadius: 10},HelperStyle.flexColumn, HelperStyle.flexAlignCenter, HelperStyle.flexCenter]}>
                         <Text style={{fontFamily: BaseFont.fontMedium, color: 'white', fontSize: 11}}>{status}</Text>
                     </TouchableOpacity>
                 </View>

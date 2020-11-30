@@ -52,6 +52,11 @@ const VerifyCodeScreen = ({ navigation }) => {
                     </View>
                 </View>
                 <View style={[HelperStyle.flexColumn, HelperStyle.marginHorizontal20]}>
+                    <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: BaseColors.heading, borderRadius: 30, marginVertical: 5}, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10]} onPress={() => navigation.navigate('VerifyCode')}>
+                        <Text style={[{fontFamily: BaseFont.fontBold, fontSize: 17, color: 'white' }]}>
+                            Resend OTP
+                        </Text>
+                    </TouchableOpacity>
                     <TouchableOpacity activeOpacity={0.8} style={[{backgroundColor: '#DFE0E5', borderRadius: 30, marginVertical: 5}, HelperStyle.flexAlignCenter, HelperStyle.paddingVertical10]} onPress={() => navigation.navigate('ForgetPassword')}>
                         <Text style={[{fontFamily: BaseFont.fontBold, fontSize: 17, color: '#1B2749' }]}>
                             Back

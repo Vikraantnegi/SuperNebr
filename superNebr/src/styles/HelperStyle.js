@@ -757,6 +757,24 @@ export default {
         paddingTop: 30,
     },
 
+    dividerUpper : {
+        borderTopWidth : 1,
+        borderColor : '#DFE0E5',
+        paddingTop: 5,
+    },
+
+    dividerBottom : {
+        borderBottomWidth : 1,
+        borderColor : '#DFE0E5',
+        paddingBottom: 5,
+    },
+
+    borderBox : {
+        borderTopWidth: 0.5,
+        borderBottomWidth: 0.5,
+        borderColor: '#7F8592',
+    },
+
     // Floating Action Button
     floatingAction: {
         position: 'absolute',
